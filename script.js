@@ -3,23 +3,23 @@
 // ★★★ YOUR TREASURE HUNT QUESTIONS AND ANSWERS GO HERE ★★★
 const clues = [
     {
-        question: "Late nights end here, with names on a page (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        question: "Late nights end here, with names on a page (find out the physical clue to get your gift and enter the stuff writte in the paper) (may be ask someone for it)",
         answer: "strong21" // Answer is NOT case-sensitive
     },
     {
-        question: "Not a stage, just a mess. The place with bins and the place bishoyi lost his cool that's your place with the clue (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        question: "Not a stage, just a mess. The place with bins and the place bishoyi lost his cool that's your place with the clue (find out the physical clue to get your gift and enter the stuff writte in the paper) (go there and just look around)",
         answer: "pandu21"
     },
     {
-        question: "A room of mirrors, beats, and strain, Where bad chunks power your gain. Look inside where muscles grow, (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        question: "A room of mirrors, beats, and strain, Where bad chunks power your gain. Look inside where muscles grow, (find out the physical clue to get your gift and enter the stuff writte in the paper) ( lok for some poster, inside out)",
         answer: "happybirthdaypandujii"
     },
     {
-        question: "Step inside, the mirrors glare, I press a floor, you’re unaware. ",
+        question: "Step inside, the mirrors glare, I press a floor, you’re unaware. (try to enter, you will find your thing)",
         answer: "stayhappy"
     },
     {
-        question: "Plates, laughter, and late-night fun… find the place where it all began.",
+        question: "Plates, laughter, and late-night fun… find the place where it all began.(hint:look gor things jo aag lag jaaye to bachane ke liye use hote he, haath lagake dhundo) ",
         answer: "bhaalu"
     },
     
@@ -85,3 +85,4 @@ answerInputElement.addEventListener('keyup', function(event) {
 // Initial display
 
 displayClue();
+
