@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 21st Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Happy 21st Birthday<br><span id="typed-text" class="dynamic-text"></span></h1>
+        <p>A special day for a truly special person.</p>
+        <div class="scroll-down">↓ Scroll for a surprise ↓</div>
+    </header>
+
+    <main>
+        <section id="message" class="container content-section">
+            <h2>A Little Message For You</h2>
+            <div class="message-box">
+                <p>
+                    
+                    On this day, the 30th of August, the world shines a little brighter because it’s the birthday of someone truly special. 
+                    I wish you go and shine and have a happy life ahead in all aspect of your life. Have faith and courage with you wehrever you go and live the life you are living. Never change.
+                    <br><br>
+                    be the sweetest, kindest and the most innocent girl you are. 
+                    <br>
+                    Party toh abhi shuru hui hai! Happy Birthday!   <br><br>
+                    With all my love, <br>
+                    Bhaiyaa..
+                </p>
+            </div>
+        </section>
+
+        <section class="slideshow-section content-section">
+            <div class="container">
+                <h2>A Walk Down Memory Lane...</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/image1.jpg" alt="Memory 1"></div>
+                        <div class="swiper-slide"><img src="images/image2.jpg" alt="Memory 2"></div>
+                        <div class="swiper-slide"><img src="images/image3.jpg" alt="Memory 3"></div>
+                        <div class="swiper-slide"><img src="images/image4.jpg" alt="Memory 4"></div>
+                        <div class="swiper-slide"><img src="images/image5.jpg" alt="Memory 5"></div>
+                        <div class="swiper-slide"><img src="images/image6.jpg" alt="Memory 6"></div>
+                        <div class="swiper-slide"><img src="images/image7.jpg" alt="Memory 7"></div>
+                        <div class="swiper-slide"><img src="images/image8.jpg" alt="Memory 8"></div>
+                        <div class="swiper-slide"><img src="images/image9.jpg" alt="Memory 9"></div>
+                        <div class="swiper-slide"><img src="images/image10.jpg" alt="Memory 10"></div>
+                        <div class="swiper-slide"><img src="images/image11.jpg" alt="Memory 11"></div>
+                        <div class="swiper-slide"><img src="images/image12.jpg" alt="Memory 12"></div>
+                        <div class="swiper-slide"><img src="images/image13.jpg" alt="Memory 13"></div>
+                        <div class="swiper-slide"><img src="images/image14.jpg" alt="Memory 14"></div>
+                        <div class="swiper-slide"><img src="images/image15.jpg" alt="Memory 15"></div>
+                        <div class="swiper-slide"><img src="images/image16.jpg" alt="Memory 16"></div>
+                        <div class="swiper-slide"><img src="images/image17.jpg" alt="Memory 17"></div>
+                        <div class="swiper-slide"><img src="images/image18.jpg" alt="Memory 18"></div>
+                        <div class="swiper-slide"><img src="images/image19.jpg" alt="Memory 19"></div>
+                        <div class="swiper-slide"><img src="images/image20.jpg" alt="Memory 20"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <a href="game.html" class="cta-button">Let's Start The Game!</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // --- Initialize Typed.js ---
+        // ★★★ NAME HAS BEEN UPDATED HERE ★★★
+        var typed = new Typed('#typed-text', {
+            strings: ["Pandu Jii!", "The One and Only!", "Our Birthday Girl!"],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true
+        });
+
+        // --- Initialize Swiper.js ---
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        // --- Fade-in animation on scroll ---
+        const sections = document.querySelectorAll('.content-section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
