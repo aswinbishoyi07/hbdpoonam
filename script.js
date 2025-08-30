@@ -3,21 +3,26 @@
 // ★★★ YOUR TREASURE HUNT QUESTIONS AND ANSWERS GO HERE ★★★
 const clues = [
     {
-        question: "What's the name of the first pet we ever had together? (One word)",
-        answer: "fluffy" // Answer is NOT case-sensitive
+        question: "Late nights end here, with names on a page (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        answer: "strong21" // Answer is NOT case-sensitive
     },
     {
-        question: "Which city did we visit for our first family vacation outside our home state?",
-        answer: "goa"
+        question: "Not a stage, just a mess. The place with bins and the place bishoyi lost his cool that's your place with the clue (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        answer: "pandu21"
     },
     {
-        question: "What's the name of the silly cartoon we used to watch every Saturday morning?",
-        answer: "powerpuff girls"
+        question: "A room of mirrors, beats, and strain, Where bad chunks power your gain. Look inside where muscles grow, (find out the physical clue to get your gift and enter the stuff writte in the paper)",
+        answer: "happybirthdaypandujii"
     },
     {
-        question: "What is the secret ingredient in Mom's famous birthday cake? (It's a fruit)",
-        answer: "pineapple"
+        question: "Step inside, the mirrors glare, I press a floor, you’re unaware. ",
+        answer: "stayhappy"
     },
+    {
+        question: "Plates, laughter, and late-night fun… find the place where it all began.",
+        answer: "bhaalu"
+    },
+    
     // This is the final message when all clues are solved
     {
         question: "Congratulations! You've solved all the riddles!",
@@ -78,4 +83,5 @@ answerInputElement.addEventListener('keyup', function(event) {
 
 
 // Initial display
+
 displayClue();
