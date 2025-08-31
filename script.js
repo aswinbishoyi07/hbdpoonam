@@ -22,7 +22,28 @@ const clues = [
         question: "Plates, laughter, and late-night fun… find the place where it all began.(hint:look gor things jo aag lag jaaye to bachane ke liye use hote he, haath lagake dhundo) ",
         answer: "bhaalu"
     },
-    
+    //day-2 starts from here....
+        {
+            question: "Main wahan hoon jahan taare (stars) aur grah (planets) raaz batate hain. Ek professor ke saathi ban kar, main kitaabon mein kho gayi. Meri project ka pehla akshar, Uske neeche mera agla raasta hai.",
+            answer: "skincare@21"
+        },
+    // the gift is a minimalist thing
+    {
+        question: "A room where a tune plays with every step, where the memory of your every performance is hidden. Tumhare har kadam ka raaz, Ek sangeet bhare kamre ke andar chupa hai, Where every accessory of your performance and everythings is, (hint: you are a leader) ",
+        answer: "youarebeautiful@21"
+    },
+    // tha gift is a lip balm
+    {
+        question: "theer is a guy who basically is useless. he has a place and head of multiple things. he did create troubles for you. basically he is the lazy ass and he has a boss who he reports. so find his place to get your clue.. ",
+        answer: "fragrance@21"
+    },
+    // the gift is a scented candle
+
+    {
+        question: "there is this place where you feed your favourite animal. where they come running to you to just cuddle their body on your hand. (have a intense look) ",
+        answer: "stayhealthy@21"
+    },
+    // the gift is a body milk
     // This is the final message when all clues are solved
     {
         question: "Congratulations! You've solved all the riddles!",
@@ -30,7 +51,7 @@ const clues = [
     }
 ];
 
-let currentClueIndex = 0;
+let currentClueIndex = 5;
 
 // Get HTML elements
 const clueTitleElement = document.getElementById('clue-title');
@@ -49,7 +70,7 @@ function displayClue() {
         answerInputElement.value = "";
     } else {
         // All clues are solved
-        gameContainer.innerHTML = `<h2 id="final-message">You did it!<br>Your final gift is waiting for you at [LOCATION OF THE GIFT]! Go find it!</h2>`;
+        gameContainer.innerHTML = `<h2 id="final-message">You did it!<br>Your final gift is waiting for you at Prefab Guards! Go find it!</h2>`;
     }
 }
 
@@ -85,4 +106,5 @@ answerInputElement.addEventListener('keyup', function(event) {
 // Initial display
 
 displayClue();
+
 
